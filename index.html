@@ -135,18 +135,13 @@
     /* ── HERO ── */
     .hero {
       position: relative;
-      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, #1e4f82 100%);
+      background:
+        linear-gradient(rgba(10,22,40,0.78), rgba(10,22,40,0.78)),
+        url("images/storefront-glass.avif") center center / cover no-repeat;
       color: var(--white);
       overflow: hidden;
       padding: 72px 20px 80px;
       text-align: center;
-    }
-    .hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-      pointer-events: none;
     }
     .hero-badge {
       display: inline-flex;
@@ -559,6 +554,11 @@
       gap: 12px;
       border-top: 1px solid var(--gray-100);
       padding-top: 16px;
+      background: transparent;
+      color: inherit;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
     }
     .author-avatar {
       width: 40px;
@@ -818,7 +818,7 @@
 <header class="site-header">
   <div class="header-inner">
     <a href="#" class="logo-wrap" aria-label="Kannapolis Glass &amp; Glazing — Home">
-      <img src="images/Kannapolis Glass Logo.avif" alt="Kannapolis Glass &amp; Glazing logo">
+      <img src="images/Kannapolis Glass Logo-white.png" alt="Kannapolis Glass &amp; Glazing logo">
       <div class="logo-text">
         Kannapolis Glass &amp; Glazing
         <span>Full Service Since 1982</span>
@@ -1235,7 +1235,7 @@
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="images/Kannapolis Glass Logo.avif" alt="Kannapolis Glass &amp; Glazing">
+        <img src="images/Kannapolis Glass Logo-white.png" alt="Kannapolis Glass &amp; Glazing">
         <p>Your full service glass company serving the Kannapolis and Charlotte, NC area since 1982. Commercial, storefront, and residential glass installation and repair.</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/p/Kannapolis-Glass-Glazing-100053493772951/" target="_blank" rel="noopener noreferrer" aria-label="Kannapolis Glass on Facebook">
